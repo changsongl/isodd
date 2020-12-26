@@ -41,6 +41,8 @@ isOdd := isodd.Interface(num) // false
 
 ### Code Coverage:
 ````shell script
+go test -c -covermode=count -coverpkg ./...
+
 ./isodd.test 
 
 PASS
