@@ -4,6 +4,8 @@ import (
 	"reflect"
 )
 
+// interface type to check whether is odd, only support integer type
+// float type, string type. Others are invalid.
 func Interface(i interface{}) (bool, error) {
 	t := reflect.TypeOf(i).Kind()
 

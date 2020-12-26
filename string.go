@@ -5,6 +5,7 @@ import (
 	"strconv"
 )
 
+// check string whether is a odd integer
 func String(s string) (bool, error) {
 	i, e := strconv.ParseInt(s, 10, 64)
 	if e != nil {
